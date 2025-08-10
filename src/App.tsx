@@ -2,14 +2,19 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { FooterSection } from "./components/FooterSection";
+import { Form } from "./components/Form";
+import { Navbar } from "./components/Navbar";
+import { PricingSection } from "./components/PricingSection";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      
-      </header>
-      <FooterSection/>
+    <div>
+      <Navbar />
+      <div>
+        <PricingSection />
+        <Form />
+        <FooterSection/>
+      </div>
     </div>
   );
 }

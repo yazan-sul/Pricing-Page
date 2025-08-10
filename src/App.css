@@ -7,7 +7,7 @@ footer {
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+header,
 footer nav,
 footer .social-links {
   display: flex;
@@ -17,7 +17,7 @@ footer .social-links {
   margin-bottom: 20px;
 }
 
-footer ul {
+header ul,footer ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -43,4 +43,7 @@ footer p {
   font-size: 14px;
   color: #111010;
   margin-top: 10px;
+}
+.form-container{
+  
 }

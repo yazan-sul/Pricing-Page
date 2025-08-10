@@ -38,7 +38,7 @@ export function FooterSection() {
           <FontAwesomeIcon icon={faXTwitter} size='lg' />
         </a>
       </div>
-      <p>&copy; {year} Yazan Sulaiman</p>
+      <p>&copy; {year} Yazan Sulaiman. All rights reserved</p>
     </footer>
   );
 }
