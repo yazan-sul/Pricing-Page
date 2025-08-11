@@ -166,9 +166,7 @@ header .nav-features {
   justify-content: start ;
   margin-left: 60px;
 }
-.advantages ul{
-  list-style-type: none;
-}
+
 .price-card button {
   display: flex;
   justify-content: center;
@@ -187,4 +185,24 @@ header .nav-features {
 
 .price-card button:hover {
   background-color: #005bb5;
+}
+
+.advantages ul{
+  list-style-type: none;
+}
+.advantages li{
+  margin-top: 12px;
+  font-size: 18px;
+  margin-left: 20px; 
+  text-align: start;
+  position: relative;
+  padding-left: 20px;
+}
+
+.advantages li::before {
+  content: '✔'; 
+  position: absolute;
+  left: 0;
+  top: 4px;
+  font-weight: bold;
 }
