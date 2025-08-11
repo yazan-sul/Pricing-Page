@@ -17,8 +17,11 @@ function App() {
           <p>pick the plan that suits you today and set up as your demands grow - our flexible options have you journy mapped out</p>
           <button>monthly</button>
           <button>annuly</button>
-
-          <PricingSection type='Basic' price={3.99} monthly={'monthly'}  most={true}/>
+          <div className='plans'>
+            <PricingSection type='Basic' price={3.99} monthly={'monthly'}  most={false}/>
+            <PricingSection type='Standard' price={6.99} monthly={'monthly'}  most={true}/>
+            <PricingSection type='Premium' price={13.99} monthly={'monthly'}  most={false}/>
+          </div>
         </div>
         <FooterSection/>
       </div>
