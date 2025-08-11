@@ -141,11 +141,15 @@ header .nav-features {
 }
 .price-container {
   display: flex;
+  justify-content: center;
+  align-items: flex-end;
   font-size: 50px;
-  padding: 10px;
-  margin: 10px;
-  max-height: 200px;
+  gap: 8px;
 }
+.price-container h1 {
+  margin: 0;
+}
+
 .price-container p {
   display: flex;
   font-size: 18px;
@@ -155,11 +159,32 @@ header .nav-features {
   display: flex;
   flex-direction: column;
 }
-.bill p{
+.bill > p{
   display: flex;
-
-  padding: 10px;
+  margin-top: 0px;
+  align-items: flex-start;
+  justify-content: start ;
+  margin-left: 60px;
 }
 .advantages ul{
   list-style-type: none;
+}
+.price-card button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+  margin: 20px auto;
+  padding: 12px 24px;
+  background-color: #ccc;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.price-card button:hover {
+  background-color: #005bb5;
 }

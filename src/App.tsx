@@ -18,7 +18,7 @@ function App() {
           <button>monthly</button>
           <button>annuly</button>
 
-          <PricingSection type='basic' price={3} monthly={'monthly'}  most={true}/>
+          <PricingSection type='Basic' price={3.99} monthly={'monthly'}  most={true}/>
         </div>
         <FooterSection/>
       </div>
