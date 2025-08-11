@@ -11,8 +11,15 @@ function App() {
     <div>
       <Navbar />
       <div>
-        <PricingSection />
-        <Form />
+        <div>
+          <h6>Pricing Tires</h6>
+          <h1>Fit for all your needs</h1>
+          <p>pick the plan that suits you today and set up as your demands grow - our flexible options have you journy mapped out</p>
+          <button>monthly</button>
+          <button>annuly</button>
+
+          <PricingSection type='basic' price={3} monthly={'monthly'}  most={true}/>
+        </div>
         <FooterSection/>
       </div>
     </div>

@@ -6,18 +6,23 @@ export function Form() {
   return (
     <div className="form-container">
       <form>
-        <div>
-          <label htmlFor="name">Name</label>
-          <input id="name" type="text" name="name" required />
+       <div className="form-row">
+          <div className="form-group">
+            <label>Name:</label>
+            <input type="text" name="name" />
+          </div>
+          <div className="form-group">
+            <label>Email:</label>
+            <input type="email" name="email" />
+          </div>
         </div>
-        <div>
-          <label htmlFor="email">Email</label>
-          <input id="email" type="email" name="email" required />
+
+        <div className="form-group full-width">
+          <label>Message:</label>
+          <textarea name="message"></textarea>
         </div>
-        <div>
-          <label htmlFor="message">Message</label>
-          <textarea id="message" name="message" required />
-        </div>
+
+        <button type="submit">Send</button>
       </form>
     </div>
   );
