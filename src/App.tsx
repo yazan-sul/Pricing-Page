@@ -5,6 +5,7 @@ import { FooterSection } from "./components/FooterSection";
 import { Form } from "./components/Form";
 import { Navbar } from "./components/Navbar";
 import { PricingSection } from "./components/PricingSection";
+import { Address } from "./components/Addres";
 
 function App() {
   const [billingCycle, setBillingCycle] = useState<"monthly" | "yearly">(
@@ -56,8 +57,10 @@ function App() {
           />
         </div>
       </div>
-
-      <Form />
+      <div className="address-form">
+        <Address />
+        <Form />
+      </div>
       <FooterSection />
     </div>
   );

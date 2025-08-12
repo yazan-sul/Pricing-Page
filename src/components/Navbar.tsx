@@ -1,11 +1,12 @@
 import React from "react";
-
+import logo from "../logo.svg"
 export function Navbar() {
   
   return (
     <header className="site-header">
       <div className="header-container">
         <div className="logo">
+          <img src={logo}/>
           <a href="#">Abstractly</a>
         </div>
 
