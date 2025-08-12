@@ -37,26 +37,30 @@ const PLANS = {
   Basic: {
     text: "Access to a curated selection of abstract images",
     advantages: [
-      "standard quality images",
+      "Standard quality images",
       "Limited to personal use",
-      "email support",
+      "Email support",
     ],
   },
-  
-  Premium: {
-    text: "Access to a all selection of abstract images",
-    advantages: [
-      "high quality images",
-      "free to personal use",
-      "email support",
-    ],
-  },
+
   Standard: {
-    text: "Access to a all selection of abstract images",
+    text: "Unlock access to a wider library of high-quality abstract images",
     advantages: [
-      "high quality images",
-      "free to personal use",
-      "email support",
+      "High quality images",
+      "Personal and small business use",
+      "Priority email support",
+      "Monthly new image updates",
+    ],
+  },
+
+  Premium: {
+    text: "Full access to the complete collection of exclusive abstract visuals",
+    advantages: [
+      "Ultra high-resolution images",
+      "Licensed for commercial and client use",
+      "Dedicated account manager",
+      "Priority support via chat & email",
+      "Early access to new releases",
     ],
   },
 };
