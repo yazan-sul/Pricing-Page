@@ -8,6 +8,9 @@ import { PricingSection } from "./components/PricingSection";
 import { Address } from "./components/Addres";
 import { TestimonialsCard } from "./components/TestimonialsCard";
 import { TestimonialsSection } from "./components/TestimonialsSection";
+import { Quesitons } from "./components/Quesitons";
+import { QuesitonSection } from "./components/QuestionSection";
+import { Features } from "./components/Featuers";
 
 function App() {
   const [billingCycle, setBillingCycle] = useState<"monthly" | "yearly">(
@@ -58,10 +61,21 @@ function App() {
             monthly={billingCycle}
           />
         </div>
+        <QuesitonSection />
+        <Features />
+         <div className="testimonials-head-text">
+            <p>Testimonials</p>
+            <h1>Countless Users, Countless smiles</h1>
+            <p>
+              Explore our community's journy and discover why satisfaction
+              define us
+            </p>
+          </div>
         <div className="testimonials-section">
+         
           <TestimonialsSection></TestimonialsSection>
         </div>
-        <div className="address-form">
+        <div className="address-form" id="form">
           <Address />
           <Form />
         </div>

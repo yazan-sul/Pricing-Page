@@ -16,7 +16,7 @@ export function Navbar() {
             <li><a className="header-nav-item" href="#">Features</a></li>
             <li><a className="header-nav-item" href="#">Pricing</a></li>
             <li><a className="header-nav-item" href="#">About Us</a></li>
-            <li><a className="header-nav-item" href="#">Contact</a></li>
+            <li><a className="header-nav-item" href="#form">Contact</a></li>
           </ul>
         </nav>
 

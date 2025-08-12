@@ -10,6 +10,7 @@ textarea,
 label {
   margin: 0;
   padding: 0;
+  font-family: "Arial", sans-serif;
 }
 body{
   background-color: #e4e2e2;
@@ -21,7 +22,6 @@ footer {
   color: #111010;
   padding: 40px 20px;
   text-align: center;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 footer nav,
@@ -70,7 +70,6 @@ footer p {
   background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  font-family: "Arial", sans-serif;
 }
 
 form {
@@ -113,7 +112,7 @@ textarea {
   resize: vertical;
   min-height: 100px;
 }
-
+.get-in-touch,
 button {
   padding: 12px;
   background-color: #007bff;
@@ -124,7 +123,7 @@ button {
   font-size: 16px;
   transition: background-color 0.3s ease;
 }
-
+.get-in-touch,
 button:hover {
   background-color: #0056b3;
 }
@@ -165,7 +164,7 @@ header .nav-features {
 
   padding-top: 60px;
   text-align: center;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 .under-header h5 {
@@ -278,8 +277,9 @@ header .nav-features {
 }
 .plans {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
   gap: 20px;
   padding: 20px;
 }
@@ -320,7 +320,6 @@ header .nav-features {
 
   padding: 20px 40px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .header-container {
@@ -468,7 +467,6 @@ header .nav-features {
   border-radius: 12px;
   padding: 16px;
   max-width: 360px;
-  font-family: 'Gill Sans', sans-serif;
   background-color: #fff;
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
 }
@@ -525,9 +523,163 @@ header .nav-features {
   justify-content: center; 
   max-width: 1200px; 
   margin: 0 auto; 
+  padding-left: 10rem;
 }
 
 .body-without-head{
 
   background-color: #ffffff;
+}
+.question-section {
+  padding-top: 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #ccc;
+  text-align: start;
+}
+.question-section:last-child{
+  border-bottom: none;
+}
+.inActive{
+  display: none;
+}
+.answerActive{
+  font-weight: 50;
+  opacity: .7 ;
+}
+.question-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.5rem;
+ 
+  margin-bottom: 0.5rem;
+}
+
+.question-header h4 {
+  margin: 0;
+}
+
+
+.show-more {
+  background: none;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  color: black;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0;
+  transition: background-color 0.6s ease;
+}
+.show-more:hover {
+  background-color: #b6b3b3;
+}
+
+.questions-app{
+  padding-top: 5rem;
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+
+}
+.questions-app h1{
+  font-size: 42px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.questions-app > p{
+  
+  font-weight: lighter;
+  padding-bottom: 20px;
+}
+
+.support-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.6rem;
+  margin: 0 auto;
+  min-width: 800px;
+  max-width: 1000px;
+  background-color: #fff;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
+}
+
+.support-section-head {
+  display: flex;
+  gap: 20px;
+}
+.get-in-touch {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  text-align: end;
+  text-decoration: none;
+  margin: 0 0 0 270px;
+
+}
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 300px;
+  padding: 1.2rem;
+  background-color: #fff;
+  
+}
+
+.feature-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f8;
+  color: #4828d5;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color .5s ease;
+  margin-bottom: 12px;
+}
+.feature-logo:hover {
+  background-color: #e6e6f5;
+}
+.testimonials-head-text,
+.features-parent {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 700px;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  justify-content: center;
+}
+.testimonials-head-text p:first-child,
+.features-parent p:first-child{
+  color: #4828d5;
+}
+.testimonials-head-text p:last-child,
+.features-parent p:last-child{
+  opacity: .8;
+}
+.feature-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 800px;
+  margin: 0 auto;
 }
