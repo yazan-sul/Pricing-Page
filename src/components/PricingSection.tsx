@@ -27,7 +27,7 @@ export function PricingSection({ price, monthly, type, most }: props) {
         )}
         </ul>
       </div>
-      <button className={`${most ? 'button-most' :''}`}>
+      <button type="button" className={`${most ? 'button-most' :''}`}>
         Buy now
       </button>
     </div>
