@@ -519,7 +519,7 @@ header .nav-features {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr; 
   gap: 2rem; 
-  padding: 4rem 4rem; 
+  padding: 1rem 2rem; 
   justify-content: center; 
   max-width: 1200px; 
   margin: 0 auto; 
@@ -668,6 +668,10 @@ header .nav-features {
   padding-top: 1.2rem;
   padding-bottom: 1.2rem;
   justify-content: center;
+}
+.testimonials-head-text p:first-child{
+  padding-top: 2rem;
+  padding-bottom: 0px;
 }
 .testimonials-head-text p:first-child,
 .features-parent p:first-child{
