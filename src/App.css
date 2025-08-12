@@ -11,6 +11,10 @@ label {
   margin: 0;
   padding: 0;
 }
+body{
+  background-color: #e4e2e2;
+  margin: 1.5rem;
+}
 header,
 footer {
   background-color: inherit;
@@ -20,7 +24,6 @@ footer {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-header,
 footer nav,
 footer .social-links {
   display: flex;
@@ -157,9 +160,11 @@ header .nav-features {
 }
 .under-header {
   max-width: 800px;
-  margin: 60px auto 40px;
+  margin: 0px auto 40px;
+    padding: 0 20px;
+
+  padding-top: 60px;
   text-align: center;
-  padding: 0 20px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -312,7 +317,7 @@ header .nav-features {
   background-color: #e0e0e0;
 }
 .site-header {
-  background-color: #ffffff;
+
   padding: 20px 40px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -520,4 +525,9 @@ header .nav-features {
   justify-content: center; 
   max-width: 1200px; 
   margin: 0 auto; 
+}
+
+.body-without-head{
+
+  background-color: #ffffff;
 }
