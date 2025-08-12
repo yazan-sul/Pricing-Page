@@ -6,6 +6,8 @@ import { Form } from "./components/Form";
 import { Navbar } from "./components/Navbar";
 import { PricingSection } from "./components/PricingSection";
 import { Address } from "./components/Addres";
+import { TestimonialsCard } from "./components/TestimonialsCard";
+import { TestimonialsSection } from "./components/TestimonialsSection";
 
 function App() {
   const [billingCycle, setBillingCycle] = useState<"monthly" | "yearly">(
@@ -15,47 +17,49 @@ function App() {
   return (
     <div>
       <Navbar />
-      <div>
-        <div className="under-header">
-          <h5>Pricing Tiers</h5>
-          <h1>Fit for all your needs</h1>
-          <p>
-            pick the plan that suits you today and set up as your demands grow -
-            our flexible options have you journy mapped out
-          </p>
-          <div className="billing-toggle">
-            <button
-              onClick={() => setBillingCycle("monthly")}
-              className={billingCycle === "monthly" ? "active" : ""}
-            >
-              Monthly
-            </button>
-            <button
-              onClick={() => setBillingCycle("yearly")}
-              className={billingCycle === "yearly" ? "active" : ""}
-            >
-              Annually
-            </button>
-          </div>
+      <div className="under-header">
+        <h5>Pricing Tiers</h5>
+        <h1>Fit for all your needs</h1>
+        <p>
+          pick the plan that suits you today and set up as your demands grow -
+          our flexible options have you journy mapped out
+        </p>
+        <div className="billing-toggle">
+          <button
+            onClick={() => setBillingCycle("monthly")}
+            className={billingCycle === "monthly" ? "active" : ""}
+          >
+            Monthly
+          </button>
+          <button
+            onClick={() => setBillingCycle("yearly")}
+            className={billingCycle === "yearly" ? "active" : ""}
+          >
+            Annually
+          </button>
         </div>
-        <div className="plans">
-          <PricingSection
-            type="Basic"
-            price={prices.Basic[billingCycle]}
-            monthly={billingCycle}
-          />
-          <PricingSection
-            type="Standard"
-            price={prices.Standard[billingCycle]}
-            monthly={billingCycle}
-            most={true}
-          />
-          <PricingSection
-            type="Premium"
-            price={prices.Premium[billingCycle]}
-            monthly={billingCycle}
-          />
-        </div>
+      </div>
+      <div className="plans">
+        <PricingSection
+          type="Basic"
+          price={prices.Basic[billingCycle]}
+          monthly={billingCycle}
+        />
+        <PricingSection
+          type="Standard"
+          price={prices.Standard[billingCycle]}
+          monthly={billingCycle}
+          most={true}
+        />
+        <PricingSection
+          type="Premium"
+          price={prices.Premium[billingCycle]}
+          monthly={billingCycle}
+        />
+      </div>
+      <div className="testimonials-section">
+        
+          <TestimonialsSection></TestimonialsSection>
       </div>
       <div className="address-form">
         <Address />

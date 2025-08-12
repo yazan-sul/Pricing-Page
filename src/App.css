@@ -325,15 +325,19 @@ header .nav-features {
   max-width: 1200px;
   margin: 0 auto;
   flex-wrap: wrap;
-  gap: 200px;
+  gap: 150px;
 }
 .logo {
   display: flex;
+  
   align-items: center;
   justify-content: start;
   margin-right: 40px;
 }
-
+.logo img {
+  width: 40px;
+  height: 40px;
+}
 .logo a {
   font-size: 24px;
   font-weight: bold;
@@ -450,4 +454,70 @@ header .nav-features {
 .phone {
   position: relative;
   padding-left: 25px;
+}
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 16px;
+  max-width: 360px;
+  font-family: 'Gill Sans', sans-serif;
+  background-color: #fff;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
+}
+.profile-head {
+  display: flex;
+  gap: 20px;
+}
+.profile-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+.testimonial-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+  color: #222;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.testimonial-email {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #555;
+  margin: 4px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.testimonial-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+  margin-top: 8px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+.testimonials-section {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr; 
+  gap: 2rem; 
+  padding: 4rem 4rem; 
+  justify-content: center; 
+  max-width: 1200px; 
+  margin: 0 auto; 
 }
